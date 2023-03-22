@@ -75,6 +75,7 @@ html, body {
   }
   .about-column {
     flex: 25%;
+    background-color: rgba(101,211,190, 0.5);
   }
 .about-headers{
     position: absolute;
@@ -94,15 +95,38 @@ html, body {
     border: 2px solid black;
     padding: 10px 25px;
     color: black;
+    background-color: rgba(101,211,190, 0.1);
+}
+.carousel-images {
+  height: 600px;
+}
+.testimonial-texts {
+  position: absolute;
+    z-index: 2;
+    top: 40%;
+    color: white;
+    padding: 0 200px;
+}
+.contact-headers {
+  color: rgb(101,211,190);
 }
   @media screen and (max-width: 992px) {
     .about-column {
       flex: 50%;
+    }
+    .testimonial-texts {
+      top: 30%;
+      padding: 0 100px;
     }
   }
 
   @media screen and (max-width: 600px) {
     .about-column {
         flex: 100%;
+    }
+    .testimonial-texts {
+      top: 20%;
+      padding: 0 50px;
+      font-size: 20px;
     }
   }
